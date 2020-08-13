@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cara o cruz </title>
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+</head>
+
+<body>
+  <div>
+    <div class="navbar navbar-dark bg-dark">
+        <nav class="navbar-brand">Cara o Cruz</nav>
+    </div>
+    </div>
+      <div id="game"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <div class="mt-4">
+                <span class="table">Usuario</span>
+              </div>
+              <div class="mt-4">
+                <span id="userPoints">0</span>
+              </div>
+              <div class="mt-4" >
+                <span id="userEmojis">😁</span>
+              </div>
+              <div class="mt-4">
+                <input type="radio" name="checkbox"  id="face" value="1" checked><p style="font-size: 20px; font-family: 'Days One', sans-serif;
+                font-family: 'Orbitron', sans-serif;">CARA</p> 
+              </div>
+            </div>    
+  
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <div class="mt-4">
+                <span class="table">Resultado</span>
+              </div>
+              <div class="mt-4">
+                <span id="result"></span>
+              </div>
+              <div class="mt-4">
+                <span id="img"><img src="img/moneda.jpg" style="width: 150px; height: 150px; " ></span>
+              </div>
+              <div class="mt-4">
+                <input type="button" class="btn btn-danger"  onclick="handleButton();" value="shot" id="">
+              </div>
+            </div> 
+        
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center">
+              <div class="mt-4">
+                <span class="table">Maquina</span>
+              </div>
+              <div class="mt-4">
+                <span id=computerPoints>0</span>
+              </div>
+              <div class="mt-4">
+                <span id="computerEmojis">😁</span>
+              </div>
+              <div class="mt-4">
+                <input type="radio" name="checkbox" id="cross" value="2" > <p style="font-size: 20px; font-family: 'Days One', sans-serif;
+                  font-family: 'Orbitron', sans-serif;">CRUZ</p> <br>
+              </div>
+            </div>
+
+            <div id="effect" style="display:none" onclick="handleEffect();"></div>
+
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12 ">
+        <div class="alert alert-dismissible alert-danger"> <button type="button" class="close" onclick="removeButton()" data-dismiss="alert">&times;</button>El cara o cruz, es un juego de azar
+          en el que se emplea una moneda, <strong style="color:red"> ganará </strong> quien acierte <strong style="color:red"> 5 veces </strong>qué lado de la moneda (de los dos posibles) caerá 
+          cara arriba. <strong style="color:red"> !SUERTE! </strong>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+ <script src="js/script.js"></script>
+</body>
+</html>

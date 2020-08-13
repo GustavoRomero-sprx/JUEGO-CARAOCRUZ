@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%  
+    
+}
+
+#contenedor{
+width: 700px;
+height: 450px;
+border: solid 1px gray;
+
+margin: auto;
+text-align: center;
+font-size: 30px;
+padding: 20px;
+margin-top: 10px;
+background-color:white;
+}
+table{
+    margin: auto;
+    margin-top:15px;
+}
+
+p{
+    margin-top:15px;
+}
+
+#inputs{
+    margin: auto;
+    margin-left:30px;
+    display: inline;
+}
+
+
+#userEmojis, #computerEmojis{
+    font-size: 100px;
+   
+}
+
+
+
+button{
+    margin: auto;
+    margin-left:35px;
+    margin-right: 58px;
+}
+  
+img{
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 50%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 50%;
+      }
+    }
+
+    h2, th{
+        color:rgb(17, 175, 170);
+        margin: 15px;
+    }
+
+
+    h1{
+        text-align: center;
+        margin-top: 10px;
+        color:rgb(255, 248, 248);
+        font-size: 60px;
+    }
+
+    .table{
+        font-family: 'Days One', sans-serif;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 25px;
+    }
+
+
+    #userPoints,#computerPoints{
+        color: red;
+        font-family: 'Days One', sans-serif;
+        font-size: 60px;
+    }
+
+    #effect {
+        position: absolute;
+        background: rgba(0,0,0,0.9);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        transition: all 0.1s;
+    }
+    
+    #effect h1 {
+        text-align: center;
+        font-size: 5em;
+        color:deepskyblue;
+        margin: 2em 0 0;
+        padding: 0;
+        line-height: 1em;
+    }
+    #effect h3 {
+        text-align: center;
+        font-size: 3em;
+        line-height: 1em;
+        margin: 0;
+        padding: 0;
+        color: deepskyblue;;
+    }
+
+    
